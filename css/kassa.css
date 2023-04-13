@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0px auto;
+}
+
+.header {
+  background: #111111;
+}
+.header .container .coll_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.header .container .coll_nav .coll_nav_left {
+  display: flex;
+  column-gap: 25px;
+  cursor: pointer;
+}
+.header .container .coll_nav .coll_nav_left .phone {
+  margin-left: 40px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.header .container .coll_nav .coll_nav_left .phone .phone_number {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+}
+.header .container .coll_nav .coll_nav_right {
+  display: flex;
+  align-items: center;
+  column-gap: 42px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+}
+.header .container .coll_nav .coll_nav_right #logout {
+  background-color: orangered;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header .container .coll_nav .coll_nav_right #logout:hover {
+  background-color: rgb(207, 57, 3);
+}
+.header .container .coll_nav .coll_nav_right .language {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.main .nav {
+  background-color: white;
+}
+.main .nav .container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .nav .container .logo {
+  cursor: pointer;
+}
+.main .nav .container .list {
+  display: flex;
+  column-gap: 50px;
+}
+.main .nav .container .list li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.main .nav .container .list li a:hover {
+  color: #5a5ac9;
+}
+.main .nav .container .nav_btnShow {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  cursor: pointer;
+}
+.main .kassa_title .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .kassa_title .container .title_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  margin: 50px 0px;
+}
+.main .kassa_title .container .title_block h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #111111;
+  border-bottom: 2px solid #5a5ac9;
+  padding-bottom: 25px;
+}
+.main .kassa_title .container .title_block p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #111111;
+}
+.main .kassa_title .container .title_block p span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5a5ac9;
+}
+.main .kassa_table {
+  background-color: white;
+  padding-bottom: 80px;
+}
+.main .kassa_table .container h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #111111;
+  margin: 30px 0px;
+  padding-top: 30px;
+}
+.main .kassa_table .container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+.main .kassa_table .container table tr:nth-child(1) {
+  background-color: #5a5ac9;
+  color: white;
+}
+.main .kassa_table .container table tr td {
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 10px 0px;
+}
+.main .kassa_table .container table tr td img {
+  width: 150px;
+}
+.main .kassa_table .container table tr td:nth-child(3) button {
+  background-color: #5a5ac9;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+.main .kassa_table .container table tr td:nth-child(7) button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+.main .total {
+  background-color: white;
+  padding-bottom: 80px;
+}
+.main .total .container {
+  display: flex;
+  column-gap: 24px;
+}
+.main .total .container .selectShow {
+  width: 60%;
+  display: flex;
+  column-gap: 24px;
+  justify-content: space-between;
+}
+.main .total .container .selectShow .left {
+  width: 100%;
+}
+.main .total .container .selectShow .left h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #111111;
+  margin-bottom: 30px;
+}
+.main .total .container .selectShow .left form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.main .total .container .selectShow .left form select,
+.main .total .container .selectShow .left form input {
+  height: 40px;
+}
+.main .total .container .selectShow .left form select::placeholder,
+.main .total .container .selectShow .left form input::placeholder {
+  padding: 0px 5px;
+}
+.main .total .container .selectShow .left h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #111111;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.main .total .container .selectShow .left form input {
+  height: 40px;
+}
+.main .total .container .selectShow .left form input::placeholder {
+  padding: 0px 5px;
+}
+.main .total .container .selectShow .right {
+  width: 100%;
+  margin-top: 68px;
+}
+.main .total .container .selectShow .right form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.main .total .container .selectShow .right form select {
+  height: 40px;
+}
+.main .total .container .selectShow .right form input {
+  height: 40px;
+  background-color: #5a5ac9;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  width: 35%;
+}
+.main .total .container .selectShow .right form input:nth-child(1) {
+  margin-bottom: 80px;
+}
+.main .total .container .totalCard {
+  width: 40%;
+}
+.main .total .container .totalCard table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #e8e7e7;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+}
+.main .total .container .totalCard table tr td {
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 25px 0px;
+}
+.main .total .container .totalCard form {
+  display: flex;
+  column-gap: 20px;
+}
+.main .total .container .totalCard form input {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5a5ac9;
+  color: white;
+}
+
+.footer {
+  padding: 60px 0px;
+  background: #efefef;
+  padding-bottom: 50px;
+}
+.footer .container .foot_row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .foot_row .foot_cards1 {
+  width: 400px;
+}
+.footer .container .foot_row .foot_cards1 img {
+  margin-bottom: 25px;
+}
+.footer .container .foot_row .foot_cards1 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #565656;
+  margin-bottom: 30px;
+}
+.footer .container .foot_row .foot_cards2 {
+  width: 400px;
+}
+.footer .container .foot_row .foot_cards2 h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #111111;
+  margin-bottom: 45px;
+}
+.footer .container .foot_row .foot_cards2 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #565656;
+  margin-bottom: 20px;
+}
+.footer .container .foot_row .foot_cards2 form {
+  display: flex;
+}
+.footer .container .foot_row .foot_cards2 form #mail {
+  width: 75%;
+  background: #ffffff;
+  border-radius: 30px 0px 0px 30px;
+  height: 47px;
+  border: none;
+}
+.footer .container .foot_row .foot_cards2 form #mail::placeholder {
+  padding: 0px 20px;
+}
+.footer .container .foot_row .foot_cards2 form #sign {
+  width: 25%;
+  background: #5a5ac9;
+  border-radius: 0px 30px 30px 0px;
+  color: white;
+  height: 47px;
+  border: none;
+  padding-left: 20px;
+}
+.footer .container .foot_row .foot_card {
+  width: 100px;
+}
+.footer .container .foot_row .foot_card h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #111111;
+  margin-bottom: 45px;
+}
+.footer .container .foot_row .foot_card ul li {
+  margin-bottom: 5px;
+}
+.footer .container .foot_row .foot_card ul li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #565656;
+}
+
+/*# sourceMappingURL=kassa.css.map */

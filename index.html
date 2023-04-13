@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOOKI</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="coll_nav">
+          <div class="coll_nav_left">
+            <img src="img/icons8-facebook-50 1.svg" alt="" />
+            <img src="img/Vector.svg" alt="" />
+            <img src="img/Vector (1).svg" alt="" />
+            <img src="img/Vector (2).svg" alt="" />
+            <div class="phone">
+              <img src="img/Looki/Icon/Path 16.svg" alt="" />
+              <p class="phone_number">(+123)4567890</p>
+            </div>
+          </div>
+          <div class="coll_nav_right">
+            <p>Setting</p>
+            <p>USD $</p>
+            <div class="language">
+              <img src="img/bayroq.svg" alt="" />
+              <p>English</p>
+            </div>
+           <a> <button id="logout">Login</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="nav">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo.png.svg" alt="" />
+          </div>
+          <ul class="list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">contact Us</a>
+            </li>
+          </ul>
+          <div class="nav_btnShow">
+            <img src="img/Looki (1)/Icon/search.svg" alt="" />
+            <img src="img/Looki (2)/Icon/shuffle.svg" alt="" />
+            <img src="img/Looki (3)/Icon/favourite.svg" alt="" />
+            <img id="kassaIcon" src="img/Looki (4)/Icon/bag.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <a id="prev" onclick="nextprev(-1)">&#10094</a>
+        <div class="container">
+          <div class="banner_top fade">
+            <div class="banner_desc">
+              <p>Face Makeup Brush</p>
+              <h2>Skincare Brush Set Sale 30% Off</h2>
+              <button class="banner_btn">Shop now</button>
+            </div>
+            <div class="banner_img">
+              <img src="img/cosmetics.jpg" alt="" />
+            </div>
+          </div>
+          <div class="banner_top fade">
+            <div class="banner_desc">
+              <p>Brush Face Makeup </p>
+              <h2> Brush Set Sale Skincare 50% Off</h2>
+              <button class="banner_btn">Shop now</button>
+            </div>
+            <div class="banner_img">
+              <img src="img/cosmetics2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="banner_top fade">
+            <div class="banner_desc">
+              <p>Makeup Brush Face </p>
+              <h2>Skincare Brush Set Sale 80% Off Skincare Brush Set</h2>
+              <button class="banner_btn">Shop now</button>
+            </div>
+            <div class="banner_img">
+              <img src="img/cosmeticks3.webp" alt="" />
+            </div>
+          </div>
+          <div class="banner_bottom">
+            <span onclick="clickDot(1)" class="indikator active"></span>
+            <span onclick="clickDot(2)" class="indikator"></span>
+            <span onclick="clickDot(3)" class="indikator"></span>
+          </div>
+        </div>
+        <a id="next" onclick="nextprev(1)">&#10095</a>
+      </section>
+
+      <section class="dostav">
+        <div class="container">
+            <div class="dostav_card">
+                <div class="dostav_image">
+                    <img src="img/2.png.svg" alt="">
+                </div>
+                <div class="dostav_desc">
+                    <h4>Free Shipping</h4>
+                    <p>On all orders over $75.00</p>
+                </div>
+            </div>
+            <div class="dostav_card">
+                <div class="dostav_image">
+                    <img src="img/3.png.svg" alt="">
+                </div>
+                <div class="dostav_desc">
+                    <h4>Free Returns</h4>
+                    <p>Returns are free within 9 days</p>
+                </div>
+            </div>
+            <div class="dostav_card">
+                <div class="dostav_image">
+                    <img src="img/4.png.svg" alt="">
+                </div>
+                <div class="dostav_desc">
+                    <h4>100% Payment Secure</h4>
+                    <p>Your payment are safe with us.</p>
+                </div>
+            </div>
+            <div class="dostav_card">
+                <div class="dostav_image">
+                    <img src="img/5.png.svg" alt="">
+                </div>
+                <div class="dostav_desc">
+                    <h4>Support 24/7</h4>
+                    <p>Contact us 24 hours a day</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="recpro">
+        <div class="container">
+            <div class="first_rec_card">
+                <img src="img/1.jpg.svg" alt="">
+            </div>
+            <div class="rec_card">
+                <img src="img/2.jpg.svg" alt="">
+            </div>
+            <div class="rec_card">
+                <img src="img/3.jpg.svg" alt="">
+            </div>
+        </div>
+      </section>
+
+      <section class="ourProducts">
+        <div class="container">
+          <div class="our_desc">
+            <h1>Our products</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, culpa?</p>
+            <ul class="our_list">
+              <li>
+                <p id="newPro" >New Products</p>
+              </li>
+              <li>
+                <p id="onsalePro" >Onsale</p>
+              </li>
+              <li>
+                <p id="upcomingPro" >Upcoming Products</p>
+              </li>
+            </ul>
+          </div>
+          <div class="our_row">
+            <!-- <div class="our_card">
+             <div class="our_img">
+              <img src="img/our1.png.svg" alt="">
+             </div>
+             <div class="our_bottom">
+                <p class="our_card_desc">
+                  All Natural Makeup Beauty Natural Cosmetics
+                </p>
+                <div class="our_shop">
+                  <p class="price">$11.90</p>
+                  <i class="fa fa-shopping-cart korzinka" aria-hidden="true"></i>
+                  <div class="addRemove">
+                    <form action="">
+                      <input type="button" value="-" id="minus">
+                      <input type="text" value="156" id="sonPro">
+                      <input type="button" value="+" id="pilus">
+                    </form>
+                  </div>
+                </div>
+             </div>
+             <form action="" class="ourForm">
+              <input type="button" value="new" id="ourBtn">
+             </form>
+            </div> -->
+            
+          </div>
+          <ul class="productPage">
+            <!-- <li>
+              <button class="productBtnPage active">1</button>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="rec2pro">
+        <div class="container">
+          <div class="rec2_card">
+            <img src="img/rec6.jpg.svg" alt="">
+          </div>
+          <div class="rec2_card">
+            <img src="img/rec5.jpg.svg" alt="">
+          </div>
+          <div class="rec2_card_three">
+            <img src="img/rec4.jpg.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="ourBlogs">
+        <div class="container">
+          <div class="blog_desc">
+            <h1>from our Latest Blogs</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+            <div class="blog_row">
+              <!-- <div class="blog_card">
+                <div class="blog_image">
+                  <img src="img/blog1.png.svg" alt="">
+                </div>
+                <h3>Fashion</h3>
+                <h2>This is first Post For Blog</h2>
+                <p>Posted by <span id="author">HasTech</span> <span id="years">12TH Nov 2023</span> </p>
+              </div>
+              <div class="blog_card">
+                <div class="blog_image">
+                  <img src="img/blog2.png.svg" alt="">
+                </div>
+                <h3>Fashion</h3>
+                <h2>This is first Post For Blog</h2>
+                <p>Posted by <span id="author">HasTech</span> <span id="years">12TH Nov 2023</span> </p>
+              </div>
+              <div class="blog_card">
+                <div class="blog_image">
+                  <img src="img/blog3.png.svg" alt="">
+                </div>
+                <h3>Fashion</h3>
+                <h2>This is first Post For Blog</h2>
+                <p>Posted by <span id="author">HasTech</span> <span id="years">12TH Nov 2023</span> </p>
+              </div>
+              <div class="blog_card">
+                <div class="blog_image">
+                  <img src="img/blog4.png.svg" alt="">
+                </div>
+                <h3>Fashion</h3>
+                <h2>This is first Post For Blog</h2>
+                <p>Posted by <span id="author">HasTech</span> <span id="years">12TH Nov 2023</span> </p>
+              </div> -->
+            </div>
+            <ul class="blogPage">
+              <!-- <li>
+                <button class="blogBtnPage active">1</button>
+              </li> -->
+            </ul>
+          
+        </div>
+      </section>
+
+      <section class="logos">
+        <div class="container">
+          <img src="img/logos1.jpg.svg" alt="">
+          <img src="img/logos2.jpg.svg" alt="">
+          <img src="img/logos3.jpg.svg" alt="">
+          <img src="img/logos4.jpg.svg" alt="">
+          <img src="img/logos5.jpg.svg" alt="">
+          <img src="img/logos6.jpg.svg" alt="">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="foot_row">
+          <div class="foot_cards1">
+            <img src="img/logo.png.svg" alt="">
+            <p>We are a team of professional designers and developers that create high quality wordpress plugins, Html, React Template.</p>
+            <img src="img/ul.svg" alt="">
+          </div>
+          <div class="foot_card">
+            <h3>Information</h3>
+            <ul>
+              <li>About us</li>
+              <li>payment</li>
+              <li>Contact us</li>
+              <li>Stores</li>
+            </ul>
+          </div>
+          <div class="foot_card">
+            <h3>Social Links</h3>
+            <ul>
+              <li>New products</li>
+              <li>Best sales</li>
+              <li>Login</li>
+              <li>My account</li>
+            </ul>
+          </div>
+          <div class="foot_cards2">
+            <h3>Newsletter</h3>
+            <p>Subcribe to the TheFace mailing list to receive update on mnew arrivals, special offers and other discount information.</p>
+            <form action="">
+              <input type="email" id="mail" placeholder="Your email address">
+              <input type="botton" id="sign" value="Sign up">
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="foot_row2">
+     <div class="container">
+      <p>Copyright © <span>HasThemes</span> . All Rights Reserved</p>
+      <img src="img/foot_img2.svg" alt="">
+     </div>
+    </div>
+
+    <script src="js/user.js"></script>
+  </body>
+</html>

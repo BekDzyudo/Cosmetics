@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kassa</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/kassa.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="coll_nav">
+          <div class="coll_nav_left">
+            <img src="img/icons8-facebook-50 1.svg" alt="" />
+            <img src="img/Vector.svg" alt="" />
+            <img src="img/Vector (1).svg" alt="" />
+            <img src="img/Vector (2).svg" alt="" />
+            <div class="phone">
+              <img src="img/Looki/Icon/Path 16.svg" alt="" />
+              <p class="phone_number">(+123)4567890</p>
+            </div>
+          </div>
+          <div class="coll_nav_right">
+            <p>Setting</p>
+            <p>USD $</p>
+            <div class="language">
+              <img src="img/bayroq.svg" alt="" />
+              <p>English</p>
+            </div>
+            <a href="index.html"> <button id="logout">Logout</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="nav">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo.png.svg" alt="" />
+          </div>
+          <ul class="list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">contact Us</a>
+            </li>
+          </ul>
+          <div class="nav_btnShow">
+            <img src="img/Looki (1)/Icon/search.svg" alt="" />
+            <img src="img/Looki (2)/Icon/shuffle.svg" alt="" />
+            <img src="img/Looki (3)/Icon/favourite.svg" alt="" />
+            <img src="img/Looki (4)/Icon/bag.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="kassa_title">
+        <div class="container">
+            <div class="title_block">
+                <h1>Cart</h1>
+                <p>Home  &#10095  <span>cart</span></p>
+            </div>
+        </div>
+      </section>
+
+      <section class="kassa_table">
+        <div class="container">
+            <h1>Your Cart Items</h1>
+            <table>
+                <tr>
+                    <td>Product Image</td>
+                    <td>Product Name</td>
+                    <td>Stock Status</td>
+                    <td>Qty</td>
+                    <td>Price</td>
+                    <td>action</td>
+                    <td>Checkout</td>
+                </tr>
+                <tr>
+                    <td><img src="img/our1.png.svg" alt=""></td>
+                    <td>Water and Wind Resistant cream</td>
+                    <td><button>In Stock</button></td>
+                    <td><form action=""><input type="number" value="1"></form></td>
+                    <td>$38.24</td>
+                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td><button>add to cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="img/our2.png.svg" alt=""></td>
+                    <td>Originals Kaval nail polish</td>
+                    <td><button>In Stock</button></td>
+                    <td><form action=""><input type="number" value="1"></form></td>
+                    <td>$38.24</td>
+                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td><button>add to cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="img/our3.png.svg" alt=""></td>
+                    <td>New Balance Arish makeup box</td>
+                    <td><button>In Stock</button></td>
+                    <td><form action=""><input type="number" value="1"></form></td>
+                    <td>$38.24</td>
+                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td><button>add to cart</button></td>
+                </tr>
+            </table>
+        </div>
+      </section>
+
+      <section class="total">
+        <div class="container">
+            <div class="selectShow">
+                <div class="left">
+                    <h1>calculate shipping</h1>
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">Select Country</option>
+                        </select>
+                        <input type="text" placeholder="Postcode / ZIP">
+                    </form>
+                    <h2>Discount coupon Code</h2>
+                    <form action="">
+                        <input type="text" placeholder="coupon Code">
+                    </form>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">Select State</option>
+                        </select>
+                        <input type="button" value="ESTIMATE">
+                        <input type="button" value="APLY CODE">
+                    </form>
+                </div>
+            </div>
+            <div class="totalCard">
+                <table>
+                    <tr>
+                        <td>Product <br> Shipping</td>
+                        <td>Total <br> <span>Free shipping</span></td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$329</td>
+                    </tr>
+                </table>
+                <form action="">
+                    <input type="button" value="UPDATE CART">
+                    <input type="button" value="CHECKOUT">
+                </form>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="foot_row">
+            <div class="foot_cards1">
+              <img src="img/logo.png.svg" alt="">
+              <p>We are a team of professional designers and developers that create high quality wordpress plugins, Html, React Template.</p>
+              <img src="img/ul.svg" alt="">
+            </div>
+            <div class="foot_card">
+              <h3>Information</h3>
+              <ul>
+                <li>About us</li>
+                <li>payment</li>
+                <li>Contact us</li>
+                <li>Stores</li>
+              </ul>
+            </div>
+            <div class="foot_card">
+              <h3>Social Links</h3>
+              <ul>
+                <li>New products</li>
+                <li>Best sales</li>
+                <li>Login</li>
+                <li>My account</li>
+              </ul>
+            </div>
+            <div class="foot_cards2">
+              <h3>Newsletter</h3>
+              <p>Subcribe to the TheFace mailing list to receive update on mnew arrivals, special offers and other discount information.</p>
+              <form action="">
+                <input type="email" id="mail" placeholder="Your email address">
+                <input type="botton" id="sign" value="Sign up">
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/kassa.js"></script>
+  </body>
+</html>

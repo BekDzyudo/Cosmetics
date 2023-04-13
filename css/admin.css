@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .container {
+  max-width: 1320px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  height: 100%;
+}
+body .container .menu {
+  width: 25%;
+  background-color: rgb(143, 53, 227);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+body .container .menu ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 5% 30%;
+  list-style: none;
+}
+body .container .menu ul .our_pro {
+  color: orange;
+}
+body .container .menu ul li {
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+body .container .menu #back {
+  cursor: pointer;
+  display: flex;
+  column-gap: 10px;
+  text-decoration: none;
+}
+body .container .menu #back h3 {
+  font-size: 20px;
+  color: white;
+}
+body .container .blok {
+  width: 75%;
+  height: 100vh;
+}
+body .container .blok .products {
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 10px #ccc;
+  padding: 20px 0px;
+  height: 90%;
+  margin-top: 40px;
+}
+body .container .blok .products form {
+  width: 50%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+body .container .blok .products form .image_pro {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .blok .products form .image_pro .img_exam {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+body .container .blok .products form .image_pro .img_exam img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+body .container .blok .products form input,
+body .container .blok .products form select {
+  height: 40px;
+  padding: 0px 10px;
+  font-size: 15px;
+}
+body .container .blok .products form input::placeholder,
+body .container .blok .products form select::placeholder {
+  padding-left: 10px;
+}
+body .container .blok .blogs {
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 10px #ccc;
+  padding: 20px 0px;
+  display: none;
+}
+body .container .blok .blogs form {
+  width: 50%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+body .container .blok .blogs form .image_blog {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .blok .blogs form .image_blog .img_exam_blog {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+body .container .blok .blogs form .image_blog .img_exam_blog img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+body .container .blok .blogs form input,
+body .container .blok .blogs form select {
+  height: 40px;
+  padding: 0px 10px;
+  font-size: 15px;
+}
+body .container .blok .blogs form input::placeholder,
+body .container .blok .blogs form select::placeholder {
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=admin.css.map */
