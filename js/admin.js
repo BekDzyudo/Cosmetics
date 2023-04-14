@@ -1,6 +1,8 @@
 let our_pro = document.querySelector(".our_pro");
 let our_blog = document.querySelector(".our_blog");
 
+let bloksPro = document.querySelector(".bloksPro");
+let bloksBlog = document.querySelector(".bloksBlog");
 let products = document.querySelector(".products");
 let blogs = document.querySelector(".blogs");
 let product_form = document.getElementById("product_form");
@@ -18,6 +20,8 @@ let savePro = document.getElementById("savePro");
 let saveBlog = document.getElementById("saveBlog");
 let closePro = document.getElementById("closePro");
 let closeBlog = document.getElementById("closeBlog");
+let rowsPro = document.querySelector(".rowsPro");
+let rowsBlog = document.querySelector(".rowsBlog");
 
 document.getElementById("back").onclick = function () {
   window.location.replace("../index.html");
@@ -61,8 +65,14 @@ function saveProductData() {
       console.log(err);
     })
     .finally(() => {
-      //   showBtnLoading(false);
-      //   getAllBooks();
+      if (
+        products_desc.value == "" ||
+        price.value == "" ||
+        category.value == ""
+      ) {
+        alert("barcha maydonlar to'ldirilishi shart");
+      }
+      products.style.display = "none";
     });
 }
 
@@ -125,8 +135,15 @@ function saveBlogData() {
       console.log(err);
     })
     .finally(() => {
-      //   showBtnLoading(false);
-      //   getAllBooks();
+      if (
+        products_desc_Blog.value == "" ||
+        author.value == "" ||
+        categoryBlog.value == "" ||
+        dateBlog.value == ""
+      ) {
+        alert("barcha maydonlar to'ldirilishi shart");
+      }
+      blogs.style.display = "none";
     });
 }
 
@@ -163,12 +180,12 @@ saveBlog.addEventListener("click", saveBlogData);
 // ============================================================================
 
 our_pro.addEventListener("click", () => {
-  products.style.display = "block";
-  blogs.style.display = "none";
+  bloksPro.style.display = "block";
+  bloksBlog.style.display = "none";
 });
 our_blog.addEventListener("click", () => {
-  blogs.style.display = "block";
-  products.style.display = "none";
+  bloksBlog.style.display = "block";
+  bloksPro.style.display = "none";
 });
 closePro.addEventListener("click", () => {
   products.style.display = "none";
@@ -176,3 +193,129 @@ closePro.addEventListener("click", () => {
 closeBlog.addEventListener("click", () => {
   blogs.style.display = "none";
 });
+
+let addElementBlog = document.querySelector(".addElementBlog");
+let addElementPro = document.querySelector(".addElementPro");
+
+addElementBlog.onclick = function () {
+  blogs.style.display = "block";
+};
+addElementPro.onclick = function () {
+  products.style.display = "block";
+};
+
+// ==============================================================
+// chizma Pro
+let productsArr = [];
+function getAllProducts() {
+  fetch(
+    "https://book-shelter-60a65-default-rtdb.firebaseio.com/cosmeticProducts.json"
+  )
+    .then((res) => {
+      if (!res.ok) throw new Error("nimadir xato");
+      return res.json();
+    })
+    .then((res) => {
+      productsArr = Object.keys(res || {}).map((item) => {
+        return {
+          ...res[item],
+          id: item,
+        };
+      });
+      renderHtmlProducts();
+      // renderIf();
+      // renderPageinationNumbers(newProArr.length);
+      // renderHtmlBookUser(choppedBooksItem(newProArr));
+    })
+    .catch((err) => {})
+    .finally(() => {});
+}
+getAllProducts();
+
+function renderHtmlProducts() {
+  let result = productsArr
+    .map((item, index) => {
+      let result = `
+     <div class="our_card">
+     <div class="our_img">
+       <img src=${item.files} alt="" />
+     </div>
+     <div class="our_bottom">
+       <p class="our_card_desc">
+       ${item.products_desc}
+       </p>
+       <div class="our_shop">
+         <p class="price">$${item.price.replace(
+           /\B(?=(\d{3})+(?!\d))/g,
+           " "
+         )}</p>
+         <button>Edit</button>
+       </div>
+     </div>
+     <form action="" class="ourForm">
+     <input type="button" value="${item.category}" id="ourBtn">
+    </form>
+   </div>
+    `;
+      return result;
+    })
+    .join(" ");
+  rowsPro.innerHTML = result;
+}
+// ==============================================================
+// chizma Blok
+
+let blogArr = [];
+
+function getAllBlog() {
+  fetch(
+    "https://book-shelter-60a65-default-rtdb.firebaseio.com/cosmeticBlog.json"
+  )
+    .then((res) => {
+      if (!res.ok) throw new Error("nimadir xato");
+      return res.json();
+    })
+    .then((res) => {
+      blogArr = Object.keys(res || {}).map((item) => {
+        return {
+          ...res[item],
+          id: item,
+        };
+      });
+      renderHtmlBlog();
+    })
+    .catch((err) => {})
+    .finally(() => {});
+}
+
+getAllBlog();
+
+function renderHtmlBlog() {
+  let result = blogArr
+    .map((item, index) => {
+      let d = new Date(item.dateBlog);
+      let datestring =
+        d.getDate() +
+        "." +
+        (d.getMonth() + 1) +
+        "." +
+        d.getFullYear() +
+        " " +
+        d.getHours() +
+        ":" +
+        d.getMinutes();
+      let result = `
+      <div class="blog_card">
+      <div class="blog_image">
+        <img src=${item.filesBlog} alt="">
+      </div>
+      <h3>${item.categoryBlog}</h3>
+      <h2>${item.products_desc_Blog}</h2>
+      <p>Posted by <span id="author">${item.author}</span> <span id="years">${datestring}</span> </p>
+    </div>
+    `;
+      return result;
+    })
+    .join(" ");
+  rowsBlog.innerHTML = result;
+}

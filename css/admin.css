@@ -47,84 +47,277 @@ body .container .menu #back h3 {
   font-size: 20px;
   color: white;
 }
-body .container .blok {
+body .container .bloksPro {
   width: 75%;
-  height: 100vh;
 }
-body .container .blok .products {
+body .container .bloksPro .titleProAdmin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+body .container .bloksPro .addElementPro {
+  border: none;
+  padding: 7px 15px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+body .container .bloksPro .rowsPro {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+body .container .bloksPro .rowsPro .our_card {
+  position: relative;
+  width: 302px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #ccc;
+  padding: 20px;
+}
+body .container .bloksPro .rowsPro .our_card .ourForm {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+body .container .bloksPro .rowsPro .our_card .ourForm #ourBtn {
+  padding: 3px 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #5a5ac9;
+  color: white;
+  cursor: pointer;
+}
+body .container .bloksPro .rowsPro .our_card .our_img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+body .container .bloksPro .rowsPro .our_card .our_img img {
+  width: 100%;
+  height: 100%;
+}
+body .container .bloksPro .rowsPro .our_card .our_bottom {
+  display: flex;
+  flex-direction: column;
+  height: 158px;
+  justify-content: space-between;
+}
+body .container .bloksPro .rowsPro .our_card .our_bottom .our_card_desc {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111111;
+  margin-bottom: 10px;
+}
+body .container .bloksPro .rowsPro .our_card .our_bottom .our_shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .bloksPro .rowsPro .our_card .our_bottom .our_shop .price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #111111;
+}
+body .container .bloksPro .rowsPro .our_card .our_bottom .our_shop button {
+  padding: 7px 15px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+body .container .bloksBlog {
+  display: none;
+  width: 75%;
+}
+body .container .bloksBlog .titleBlogAdmin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+body .container .bloksBlog .addElementBlog {
+  border: none;
+  padding: 7px 15px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+body .container .bloksBlog .rowsBlog {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+body .container .bloksBlog .rowsBlog .blog_card {
+  position: relative;
+  width: 302px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #ccc;
+  padding: 20px;
+}
+body .container .bloksBlog .rowsBlog .blog_card .blog_image {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+body .container .bloksBlog .rowsBlog .blog_card .blog_image img {
+  width: 100%;
+  height: 100%;
+}
+body .container .bloksBlog .rowsBlog .blog_card h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #5a5ac9;
+  margin-bottom: 9px;
+}
+body .container .bloksBlog .rowsBlog .blog_card h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #111111;
+  margin-bottom: 14px;
+}
+body .container .bloksBlog .rowsBlog .blog_card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #565656;
+}
+body .container .bloksBlog .rowsBlog .blog_card p #author {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #5a5ac9;
+}
+body .container .bloksBlog .rowsBlog .blog_card p #years {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #565656;
+}
+body .container .products {
   margin-bottom: 30px;
   box-shadow: 2px 2px 10px #ccc;
-  padding: 20px 0px;
-  height: 90%;
+  padding: 20px 20px;
   margin-top: 40px;
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  background-color: #aeadad;
+  animation: ani 0.5s ease;
 }
-body .container .blok .products form {
-  width: 50%;
+body .container .products form {
+  width: 100%;
   margin: 5% auto;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-body .container .blok .products form .image_pro {
+body .container .products form .image_pro {
   display: flex;
   justify-content: space-between;
 }
-body .container .blok .products form .image_pro .img_exam {
+body .container .products form .image_pro .img_exam {
   width: 100px;
   height: 100px;
   border-radius: 5px;
 }
-body .container .blok .products form .image_pro .img_exam img {
+body .container .products form .image_pro .img_exam img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
-body .container .blok .products form input,
-body .container .blok .products form select {
+body .container .products form input,
+body .container .products form select {
   height: 40px;
   padding: 0px 10px;
   font-size: 15px;
 }
-body .container .blok .products form input::placeholder,
-body .container .blok .products form select::placeholder {
+body .container .products form input::placeholder,
+body .container .products form select::placeholder {
   padding-left: 10px;
 }
-body .container .blok .blogs {
+body .container .blogs {
   margin-bottom: 50px;
   box-shadow: 2px 2px 10px #ccc;
-  padding: 20px 0px;
+  padding: 20px 20px;
   display: none;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  background-color: #aeadad;
+  animation: ani 0.5s ease;
 }
-body .container .blok .blogs form {
-  width: 50%;
+body .container .blogs form {
+  width: 100%;
   margin: 5% auto;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-body .container .blok .blogs form .image_blog {
+body .container .blogs form .image_blog {
   display: flex;
   justify-content: space-between;
 }
-body .container .blok .blogs form .image_blog .img_exam_blog {
+body .container .blogs form .image_blog .img_exam_blog {
   width: 100px;
   height: 100px;
   border-radius: 5px;
 }
-body .container .blok .blogs form .image_blog .img_exam_blog img {
+body .container .blogs form .image_blog .img_exam_blog img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
-body .container .blok .blogs form input,
-body .container .blok .blogs form select {
+body .container .blogs form input,
+body .container .blogs form select {
   height: 40px;
   padding: 0px 10px;
   font-size: 15px;
 }
-body .container .blok .blogs form input::placeholder,
-body .container .blok .blogs form select::placeholder {
+body .container .blogs form input::placeholder,
+body .container .blogs form select::placeholder {
   padding-left: 10px;
+}
+
+@keyframes ani {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=admin.css.map */

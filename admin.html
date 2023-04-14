@@ -34,52 +34,97 @@
           <h3>Logout</h3>
         </a>
       </div>
-      <div class="blok">
-        <div class="products">
-          <h1 style="text-align: center; margin-top: 50px">Our Products</h1>
-          <form action="" id="product_form">
-            <div class="image_pro">
-              <input type="file" id="files" />
-              <div class="img_exam">
-                <img id="exam_img" src="" alt="" />
+      <div class="bloksPro">
+        <div class="titleProAdmin">
+          <h1>Our Products</h1>
+          <button class="addElementPro">Add</button>
+        </div>
+        <div class="rowsPro">
+          <!-- <div class="our_card">
+            <div class="our_img">
+              <img src="img/our1.png.svg" alt="" />
+            </div>
+            <div class="our_bottom">
+              <p class="our_card_desc">
+                All Natural Makeup Beauty Natural Cosmetics
+              </p>
+              <div class="our_shop">
+                <p class="price">$11.90</p>
+                <button>Edit</button>
               </div>
             </div>
-            <input type="text" placeholder="descreption" id="products_desc" />
-            <input type="number" id="price" placeholder="price" />
-            <select id="category">
-              <option>new</option>
-              <option>onsale</option>
-              <option>upcoming</option>
-            </select>
-            <input type="button" value="Save" id="savePro" />
-            <input type="button" value="Close" id="closePro" />
-          </form>
+             <form action="" class="ourForm">
+              <input type="button" value="new" id="ourBtn">
+             </form>
+          </div> -->
         </div>
-        <div class="blogs">
-          <h1 style="text-align: center; margin-top: 50px">Our Blogs</h1>
-          <form action="" id="blog_form">
-            <div class="image_blog">
-              <input type="file" id="filesBlog" />
-              <div class="img_exam_blog">
-                <img id="exam_img_blog" src="" alt="" />
-              </div>
+      </div>
+
+      <div class="bloksBlog">
+        <div class="titleBlogAdmin">
+          <h1>Our Blogs</h1>
+          <button class="addElementBlog">Add</button>
+        </div>
+
+        <div class="rowsBlog">
+          <!-- <div class="blog_card">
+            <div class="blog_image">
+              <img src="img/blog1.png.svg" alt="" />
             </div>
-            <select id="categoryBlog">
-              <option>fashion</option>
-              <option>adidas</option>
-              <option>nice</option>
-            </select>
-            <input
-              type="text"
-              placeholder="descreption"
-              id="products_desc_Blog"
-            />
-            <input type="text" id="author" placeholder="author" />
-            <input type="date" id="dateBlog" />
-            <input type="button" value="Save" id="saveBlog" />
-            <input type="button" value="Close" id="closeBlog" />
-          </form>
+            <h3>Fashion</h3>
+            <h2>This is first Post For Blog</h2>
+            <p>
+              Posted by <span id="author">HasTech</span>
+              <span id="years">12TH Nov 2023</span>
+            </p>
+          </div> -->
         </div>
+      </div>
+
+      <div class="products">
+        <h1 style="text-align: center; margin-top: 0px">Our Products</h1>
+        <form action="" id="product_form">
+          <div class="image_pro">
+            <input type="file" id="files" />
+            <div class="img_exam">
+              <img id="exam_img" src="" alt="" />
+            </div>
+          </div>
+          <input type="text" placeholder="descreption" id="products_desc" />
+          <input type="number" id="price" placeholder="price" />
+          <select id="category">
+            <option>new</option>
+            <option>onsale</option>
+            <option>upcoming</option>
+          </select>
+          <input type="button" value="Save" id="savePro" />
+          <input type="button" value="Close" id="closePro" />
+        </form>
+      </div>
+      <div class="blogs">
+        <h1 style="text-align: center; margin-top: 0px">Our Blogs</h1>
+        <form action="" id="blog_form">
+          <div class="image_blog">
+            <input type="file" id="filesBlog" />
+            <div class="img_exam_blog">
+              <img id="exam_img_blog" src="" alt="" />
+            </div>
+          </div>
+          <select id="categoryBlog">
+            <option>fashion</option>
+            <option>adidas</option>
+            <option>nice</option>
+          </select>
+          <input
+            type="text"
+            placeholder="descreption"
+            id="products_desc_Blog"
+          />
+          <input type="text" id="author" placeholder="author" />
+          <input type="date" id="dateBlog" />
+          <input type="button" value="Save" id="saveBlog" />
+          <input type="button" value="Close" id="closeBlog" />
+        </form>
       </div>
     </div>
 
