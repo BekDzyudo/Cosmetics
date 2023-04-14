@@ -202,6 +202,10 @@ a {
   padding: 10px 20px;
   border: none;
 }
+.main .kassa_table .container table tr td:nth-child(5) form input {
+  border: none;
+  outline: none;
+}
 .main .total {
   background-color: white;
   padding-bottom: 80px;
